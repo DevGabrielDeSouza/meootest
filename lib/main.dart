@@ -5,8 +5,13 @@ import 'package:testpoc/pages/store.page.dart';
 MainPage homePage = const MainPage(title: 'Localiza Meoo');
 
 void main() {
-  runApp(const MyApp());
+
+  runApp(MyApp(
+    key: UniqueKey(),
+  ));
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
