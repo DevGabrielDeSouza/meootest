@@ -24,6 +24,8 @@ class _LoginPage extends State<LoginPage> {
                 autofocus: true,
                 key: const Key('user-field'),
                 keyboardType: TextInputType.emailAddress,
+                validator: (val) =>
+                    !val!.contains('@') ? 'Invalid Email' : null,
                 style: const TextStyle(color: Colors.white, fontSize: 20),
                 decoration: const InputDecoration(
                   labelText: "E-mail",
@@ -35,6 +37,8 @@ class _LoginPage extends State<LoginPage> {
                 autofocus: true,
                 key: const Key('password-field'),
                 keyboardType: TextInputType.text,
+                validator: (val) =>
+                    val!.length < 6 ? 'Password too short' : null,
                 obscureText: true,
                 style: const TextStyle(color: Colors.white, fontSize: 20),
                 decoration: const InputDecoration(

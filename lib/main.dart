@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:testpoc/pages/form.page.dart';
 import 'package:testpoc/pages/login.page.dart';
 import 'package:testpoc/pages/store.page.dart';
 
-MainPage homePage = const MainPage(title: 'Localiza Meoo');
+MenuPage homePage = const MenuPage(title: 'Localiza Meoo');
 
 void main() {
 
@@ -23,20 +24,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: const LoginPage(),
+      home: const FormPage(),
     );
   }
 }
 
-class MainPage extends StatefulWidget {
-  const MainPage({Key? key, required this.title}) : super(key: key);
+class MenuPage extends StatefulWidget {
+  const MenuPage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
-  State<MainPage> createState() => _MainPageState();
+  State<MenuPage> createState() => _MenuPageState();
 }
 
-class _MainPageState extends State<MainPage> {
+class _MenuPageState extends State<MenuPage> {
   int _currentIndex = 0;
 
   final pages = [
