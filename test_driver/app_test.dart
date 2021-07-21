@@ -7,8 +7,6 @@ void main() {
     // First, define the Finders and use them to locate widgets from the
     // test suite. Note: the Strings provided to the `byValueKey` method must
     // be the same as the Strings we used for the Keys in step 1.
-    final counterTextFinder = find.byValueKey('counter');
-    final buttonFinder = find.byValueKey('increment');
 
     final loginButtonFinder = find.byValueKey('login-button');
     final userFieldFinder = find.byValueKey('user-field');

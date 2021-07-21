@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:testpoc/main.dart';
-import 'package:testpoc/pages/store2.page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -23,7 +22,7 @@ class _LoginPage extends State<LoginPage> {
             children: <Widget>[
               TextFormField(
                 autofocus: true,
-                key: Key('user-field'),
+                key: const Key('user-field'),
                 keyboardType: TextInputType.emailAddress,
                 style: const TextStyle(color: Colors.white, fontSize: 20),
                 decoration: const InputDecoration(
@@ -34,7 +33,7 @@ class _LoginPage extends State<LoginPage> {
               const Divider(),
               TextFormField(
                 autofocus: true,
-                key: Key('password-field'),
+                key: const Key('password-field'),
                 keyboardType: TextInputType.text,
                 obscureText: true,
                 style: const TextStyle(color: Colors.white, fontSize: 20),

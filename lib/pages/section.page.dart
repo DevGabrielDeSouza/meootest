@@ -5,9 +5,9 @@ import '../main.dart';
 class SectionPage extends StatelessWidget {
   SectionPage({Key? key}) : super(key: key);
 
-  ScrollController controller = ScrollController();
-  bool closeTopContainer = false;
-  double topContainer = 0;
+  final ScrollController controller = ScrollController();
+  final bool closeTopContainer = false;
+  final double topContainer = 0;
 
   @override
   Widget build(BuildContext context) {

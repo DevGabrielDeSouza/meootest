@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testpoc/pages/login.page.dart';
-import 'package:testpoc/pages/section.page.dart';
-import 'package:testpoc/pages/store2.page.dart';
+import 'package:testpoc/pages/store.page.dart';
 
 MainPage homePage = const MainPage(title: 'Localiza Meoo');
 
@@ -38,7 +37,7 @@ class _MainPageState extends State<MainPage> {
   final pages = [
     const Center(child: Text('Home')),
     //const Center(child: Text('Faturas')),
-    StorePage2(),
+    const StorePage(),
     const Center(child: Text('Ajuda')),
     const Center(child: Text('Perfil')),
   ];
